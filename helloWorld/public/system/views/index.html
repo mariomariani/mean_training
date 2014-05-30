@@ -1,0 +1,29 @@
+<section data-ng-controller="IndexController">
+    
+    <h1>Quer ser avisado de algum evento?</h1>
+    <form ng-submit="register()" class="signup form-horizontal">
+        <div class="form-group">
+            <label for="name" class="col-md-4 control-label">Event Name</label>
+            <div class="col-md-5">
+                <input id="name" type="text" name="name" placeholder="Evento" class="form-control" ng-model="user.name"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-md-4 control-label">Email</label>
+            <div class="col-md-4">
+                <input id="email" type="email" name="email" placeholder="Email" class="form-control" ng-model="user.email"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="username" class="col-md-4 control-label">Event date</label>
+            <div class="col-md-4">
+                <input id="username" type="text" name="username" placeholder="dd/mm/yyyy" class="form-control" ng-model="user.username"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-4 col-md-8">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </form>
+</section>
